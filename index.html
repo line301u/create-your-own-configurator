@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Croc configurator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="configurator">
+      <div id="preview_container">
+        <div id="croc_preview"></div>
+        <div id="product-preview">
+          <img src="avocado-feature.png" alt="" id="avocado" class="hide" data-feature="avocado" />
+          <img src="sunglasses-feature.png" alt="" id="sunglasses" class="hide" data-feature="sunglasses" />
+          <img src="unicornwhale-feature.png" alt="" id="unicornwhale" class="hide" data-feature="unicornwhale" />
+        </div>
+      </div>
+      <div id="column-selection">
+        <div id="color_selection">
+          <h2>Choose the color of the crocs</h2>
+          <svg height="100px" width="410px">
+            <circle class="color_btn" cx="30" cy="50" r="20" fill="white" stroke="white" stroke-width="4" />
+            <circle class="color_btn" cx="100" cy="50" r="20" fill="#454545" stroke="white" stroke-width="4"/>
+            <circle class="color_btn" cx="170" cy="50" r="20" fill="#d0ed68" stroke="white" stroke-width="4"/>
+            <circle class="color_btn" cx="240" cy="50" r="20" fill="#fcfa56" stroke="white" stroke-width="4"/>
+            <circle class="color_btn" cx="310" cy="50" r="20" fill="#68b6ed" stroke="white" stroke-width="4"/>
+            <circle class="color_btn" cx="380" cy="50" r="20" fill="#ed5ad5" stroke="white" stroke-width="4"/>
+          </svg>
+        </div>
+<div id="options-wrapper">
+       <h2>Available features</h2>
+        <div id="options">
+          
+          <figure class="option" data-feature="sunglasses">
+            <img src="sunglasses-charm.png" alt="sunglasses" />
+            <figcaption>Sunglass charm</figcaption>
+          </figure>
+          <figure class="option" data-feature="unicornwhale">
+            <img src="unicornwhale-charm.png" alt="unicornwhale" />
+            <figcaption>Unicorn charm</figcaption>
+          </figure>
+          <figure class="option" data-feature="avocado">
+            <img src="avocado-charm.png" alt="avocado" />
+            <figcaption>Avocado charm</figcaption>
+          </figure>
+        </div>
+      </div>
+
+        <div id="selected">
+          <h2>Selected features</h2>
+          <ul>
+            <!-- featureElements are added here! -->
+          </ul>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+  </body>
+
+  <script src="script.js"></script>
+</html>

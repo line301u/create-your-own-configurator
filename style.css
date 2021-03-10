@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+.chosen {
+  border-bottom: 4px solid #d8d8d8;
+  padding: 10px;
+}
+
+h2 {
+  font-family: sans-serif;
+}
+
+figcaption {
+  font-family: sans-serif;
+}
+
+#color_selection {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#croc_preview {
+  width: 100vw;
+  position: relative;
+  background-color: #f5f5f5;
+  box-shadow: 5px 5px 10px #bbbbbb;
+}
+
+#shadowimage {
+  pointer-events: none;
+  position: relative;
+}
+
+#product-preview img {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+#preview_container {
+  width: 50%;
+}
+
+#configurator {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+#options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.option img {
+  width: 100px;
+}
+
+#column-selection {
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  text-align: center;
+}
+
+#selected {
+  border-top: 5px solid white;
+  height: 200px;
+}
+
+#selected ul li img {
+  width: 100px;
+}
+
+#selected ul li {
+  display: inline-block;
+}
+
+#selected ul {
+  list-style-type: none;
+}
+
+#options-wrapper h2,
+#selected h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#options-wrapper {
+  border-top: 5px solid white;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.hide {
+  opacity: 0;
+}
+
+/* ANIMATION */
+
+.animate-feature-in {
+  --diffY: 0;
+  --diffX: 0;
+  animation: feature-in 1s;
+}
+
+@keyframes feature-in {
+  0% {
+    transform: translate(calc(var(--diffX) * 1px), calc(var(--diffY) * 1px));
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-feature-out {
+  --diffY: 0;
+  --diffX: 0;
+  animation: feature-out 1s;
+}
+
+@keyframes feature-out {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(calc(var(--diffX) * 1px), calc(var(--diffY) * 1px));
+  }
+}
+
+/* media queries */
+
+@media screen and (min-width: 1200px) {
+  #configurator {
+    flex-direction: row;
+  }
+
+  /* #preview_container {
+    width: 50%;
+  } */
+
+  #croc_preview {
+    width: 50vw;
+  }
+
+  #product-preview img {
+    width: 50vw;
+  }
+
+  #column-selection {
+    width: 100%;
+  }
+}
